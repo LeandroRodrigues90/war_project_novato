@@ -17,7 +17,7 @@ struct Territorio
 // --- Estrutura de Dados ---
 // Define a estrutura para um território, contendo seu nome, a cor do exército que o domina e o número de tropas.
 
-// --- Protótipos das Funções ---
+
 void limparBufferEntrada(){
     int c;
     while ((c=getchar()) !='\n' && c !=EOF);
