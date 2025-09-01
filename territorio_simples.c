@@ -1,6 +1,9 @@
 // Inclusão das bibliotecas padrão necessárias para entrada/saída, alocação de memória, manipulação de strings e tempo.
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
+
+
 
 
 
@@ -19,14 +22,7 @@ struct Territorio
     int tropas;
 };
 
-<<<<<<< HEAD
 // --- Protótipos das Funções ---
-=======
-// --- Estrutura de Dados ---
-// Define a estrutura para um território, contendo seu nome, a cor do exército que o domina e o número de tropas.
-
-
->>>>>>> c2b8bf0132097017e195a186975f2a35c8e239f2
 void limparBufferEntrada(){
     int c;
     while ((c=getchar()) !='\n' && c !=EOF);
@@ -62,7 +58,7 @@ int main() {
             combat[i].nome[strcspn(combat[i].nome,"\n")]=0;
             combat[i].cor[strcspn(combat[i].cor,"\n")]=0;
 
-            printf("Numero de tropas: ");
+            printf("Numero de tropas (1 a 5 ): ");
             scanf("%d",&combat[i].tropas);
 
             limparBufferEntrada();
